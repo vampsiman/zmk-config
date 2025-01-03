@@ -64,15 +64,15 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE       &kp F1  &kp F2    &kp F3    &kp F4     &kp F5                           &reset  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BACKSPACE
-&kp ESC         &kp Q   &kp W     &kp E     &kp R      &kp T                            &reset  &kp N4        &kp N5        &kp N6        &reset     &kp DEL
-&kp TAB         &kp A   &kp S     &kp D     &kp F      &kp G                            &reset  &kp N1        &kp N2        &kp N3        &kp MINUS  &kp PLUS
-&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &trans     &reset  &reset        &kp NUMBER_0  &reset        &kp SLASH  &kp ASTERISK
-                        &kp LGUI  &kp LALT  &kp LCTRL  &trans  &trans        &kp ENTER  &trans  &trans        &kp ENTER     &reset
+&kp GRAVE       &kp F1  &kp F2    &kp F3    &kp F4     &kp F5                           &sys_reset  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BACKSPACE
+&kp ESC         &kp Q   &kp W     &kp E     &kp R      &kp T                            &sys_reset  &kp N4        &kp N5        &kp N6        &sys_reset     &kp DEL
+&kp TAB         &kp A   &kp S     &kp D     &kp F      &kp G                            &sys_reset  &kp N1        &kp N2        &kp N3        &kp MINUS  &kp PLUS
+&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &trans     &sys_reset  &sys_reset        &kp NUMBER_0  &sys_reset        &kp SLASH  &kp ASTERISK
+                        &kp LGUI  &kp LALT  &kp LCTRL  &trans  &trans        &kp ENTER  &trans  &trans        &kp ENTER     &sys_reset
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-            label = "Numpad";
+            display-name = "Numpad";
         };
 
         raise_layer {
@@ -87,8 +87,8 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans  &kp BACKSPACE
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &reset  &kp DEL
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &reset  &reset
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &sys_reset  &kp DEL
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &sys_reset  &sys_reset
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
@@ -108,7 +108,7 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                    &none       &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                                 &none       &none  &none  &none  &none  &none
-&none              &reset           &reset           &none            &none            &rgb_ug RGB_BRI                                 &bl BL_INC  &none  &none  &none  &none  &none
+&none              &sys_reset           &sys_reset           &none            &none            &rgb_ug RGB_BRI                                 &bl BL_INC  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &rgb_ug RGB_BRD  &rgb_ug RGB_TOG    &bl BL_TOG  &bl BL_DEC  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none       &none       &none  &none  &none
             >;
