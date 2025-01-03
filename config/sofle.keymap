@@ -64,11 +64,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE       &kp F1  &kp F2    &kp F3    &kp F4     &kp F5                           &sys_reset  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BACKSPACE
-&kp ESC         &kp Q   &kp W     &kp E     &kp R      &kp T                            &sys_reset  &kp N4        &kp N5        &kp N6        &sys_reset     &kp DEL
-&kp TAB         &kp A   &kp S     &kp D     &kp F      &kp G                            &sys_reset  &kp N1        &kp N2        &kp N3        &kp MINUS  &kp PLUS
-&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &trans     &sys_reset  &sys_reset        &kp NUMBER_0  &sys_reset        &kp SLASH  &kp ASTERISK
-                        &kp LGUI  &kp LALT  &kp LCTRL  &trans  &trans        &kp ENTER  &trans  &trans        &kp ENTER     &sys_reset
+&kp GRAVE       &kp F1  &kp F2    &kp F3    &kp F4     &kp F5                           &none  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BACKSPACE
+&kp ESC         &kp Q   &kp W     &kp E     &kp R      &kp T                            &none  &kp N4        &kp N5        &kp N6        &none      &kp DEL
+&kp TAB         &kp A   &kp S     &kp D     &kp F      &kp G                            &none  &kp N1        &kp N2        &kp N3        &kp MINUS  &kp PLUS
+&kp LEFT_SHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE    &none      &none  &sys_reset        &kp NUMBER_0  &none         &kp SLASH  &kp ASTERISK
+                        &kp LGUI  &kp LALT  &kp LCTRL  &none   &kp SPACE     &kp ENTER  &none  &none         &kp ENTER     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -108,7 +108,7 @@
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                    &none       &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                                 &none       &none  &none  &none  &none  &none
-&none              &sys_reset           &sys_reset           &none            &none            &rgb_ug RGB_BRI                                 &bl BL_INC  &none  &none  &none  &none  &none
+&none              &none            &none            &none            &none            &rgb_ug RGB_BRI                                 &bl BL_INC  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &rgb_ug RGB_BRD  &rgb_ug RGB_TOG    &bl BL_TOG  &bl BL_DEC  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none       &none       &none  &none  &none
             >;
